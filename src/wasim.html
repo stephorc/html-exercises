@@ -13,19 +13,21 @@
 
       <!-- Add a "tooltip" to the paragraph below with the text "About W3Schools".-->
 
-      <p ="About W3Schools">W3Schools is a web developer's site.</p>
+      <p ="About W3Schools">W3Schools is a web developer's site.
+		<span class="tooltip">About W3Schools</span>
+	  </p>
 
 
       <!-- Set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/notes.jpg" width="" height="">
+      <img src="/src/assets/notes.jpg" width="250px" height="400px">
 
       <!-- Make the element below into a link that goes to "https://www.w3schools.com".-->
 
 
       <br>
 
-      <a "https://www.w3schools.com">This is a link</a>
+      <a href="https://www.w3schools.com">This is a link</a>
 
 
       <!-- Specify an alternate text for the image.
@@ -35,39 +37,39 @@
 
       <br>
 
-      <img src="/src/assets/notes.png" ="w3schools Logo">
+      <img src="/src/assets/notes.png" alt="w3schools Logo">
 
 
     </section>
 
     <section>
-      <h2>HTML Paragraphs  </h2>
+      <h2>HTML Paragraphs</h2>
 
 
       <!-- Use the correct HTML tag to add a paragraph with the text "Hello World!"..-->
 
-
-      Hello World!
+	  <p>Hello World!</p>
 
       <!-- Clean up this text with proper end tags..-->
 
 
-      <p>This is a paragraph.
+      <p>This is a paragraph.</p>
 
 
         <!-- Add a horizontal rule between the heading and the paragraph.-->
 
 
       <h3>London</h3>
+	  <hr>
       <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
 
 
       <!--  Add a line break in the middle of the paragraph:-->
 
-      <p>My Bonnie lies   over the ocean.</p>
+      <p>My Bonnie lies <hr>  over the ocean.</p>
 
       <!--  Wrap this poem around HTML tags that will preserve all spaces and linebreaks when the element is displayed.-->
-
+	  <pre>
       My Bonnie lies over the ocean.
 
       My Bonnie lies over the sea.
@@ -75,7 +77,7 @@
       My Bonnie lies over the ocean.
 
       Oh, bring back my Bonnie to me.
-
+	 </pre>
     </section>
 
     <section>
@@ -83,6 +85,7 @@
 
 
       <!-- Use the correct HTML tag to add a heading with the text "London".-->
+	  <h1>London</h1>
 
       <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
 
@@ -94,21 +97,21 @@
 
       <!-- Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue". -->
 
-      <p =";">This is a paragraph.</p>
+      <p style="color: blue;">This is a paragraph.</p>
 
 
       <!-- Use CSS to set the font of the paragraph to "courier". -->
 
-      <p style=" :courier;">This is a paragraph.</p>
+      <p style="font-family:courier;">This is a paragraph.</p>
 
       <!-- Use CSS to center align the paragraph.. -->
 
-      <p style="  :center;">This is a paragraph.</p>
+      <p style="text-align:center;">This is a paragraph.</p>
 
 
       <!-- Use CSS to set the text size to 50 pixels.  -->
 
-      <p style=" :50px;">This is a paragraph.</p>
+      <p style="font-size :50px;">This is a paragraph.</p>
 
 
 
@@ -123,7 +126,7 @@
 
       <p>
         WWF's mission is to stop the
-        degradation
+    	<strong>degradation</strong>
         of our planet's natural environment.
       </p>
 
@@ -131,7 +134,7 @@
 
       <!-- Use the correct HTML attribute, and CSS, to set the color of the paragraph to "blue". -->
 
-      <p =";">This is a paragraph.</p>
+      <p style="color: blue;">This is a paragraph.</p>
 
 
       <!-- Emphasize the word "metropolitan" in the text below. -->
@@ -140,21 +143,21 @@
 
       <p>
         Tokyo is the capital of Japan, the most populous
-        metropolitan
+       <em>metropolitan</em>
         area in the world.
       </p>
 
 
       <!-- Highlight the word "FUN" in the text below. -->
 
-      <p> HTML is FUN to learn! </p>
+      <p> HTML is <mark>FUN</mark> to learn! </p>
 
 
       <!--Apply subscript formatting to the number "2" in the text below.  -->
 
       <p>
         H
-        2
+        <sub>2</sub>
         O is the scientific term for water.
       </p>
 
@@ -162,7 +165,7 @@
 
       <p>
         My favorite color is
-        blue
+       <strike>blue</strike>
         red.
       </p>
 
@@ -176,7 +179,7 @@
       <!--Use an HTML element to add quotation marks around the letters "cool".   -->
 
       <p>
-        I am so cool .
+        I am so <q>cool</q>.
       </p>
 
 
@@ -184,22 +187,24 @@
        Add the proper HTML element to it, and specify that it is quoted from the following URL:
        http://www.worldwildlife.org/who/index.html-->
 
-      ="http://www.worldwildlife.org/who/index.html">
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
       For 50 years, WWF has been protecting the future of nature.
       The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members
       in the United States and close to 5 million globally.
+	  </blockquote>
 
       <!-- Change text direction.
         Make the text below go right-to-left. -->
-
+	<p dir="rtl">
       What a beautiful day!
-
+	</p>
 
       <!-- The letters "WHO" in the text below is an abbreviation of "World Health Organization".
 
        Use an HTML element to provide the specified abbreviation of "WHO".-->
 
-      <p> The <    "World Health Organization"> WHO</> was founded in 1948.
+      <p>
+		  The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
       </p>
 
 
@@ -210,27 +215,27 @@
 
       <!--Use the correct HTML to make the text below into a link to "default.html".-->
 
-      >Visit our HTML tutorial.
+      <a href="default.html">Visit our HTML tutorial.</a>
 
 
       <!-- Use CSS to remove the underline from the link.-->
 
-      <a href="/src/html_images.php" style=" ">HTML Images</a>
+      <a href="/src/html_images.php" style="text-decoration: none">HTML Images</a>
 
 
       <!-- Use the correct HTML attribute to make the link open in a new window. -->
 
-      <a href="/src/html_images.php"> HTML Images </a>
+      <a href="/src/html_images.php" target="_blank"> HTML Images </a>
 
 
       <!-- Use the correct HTML to make the image become a link to "default.html". -->
-
-      <img src="/src/assets/mochi.gif">
-
+	  <a href="default.html">
+       <img src="/src/assets/mochi.gif">
+	  </a>
 
       <!-- Add a "tooltip" to the link. The "tooltip" should say "Home".-->
 
-      <a href="/src/default.html">Back to Home</a>
+      <a href="/src/default.html" title="Home">Back to Home</a>
 
     </section>
 
@@ -240,24 +245,24 @@
 
       <!--Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/cat.png"  ="250"  ="400">
+      <img src="/src/assets/cat.png"  width="250"  height="400">
 
 
       <!-- Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/cat.png" style=" ;">
+      <img src="/src/assets/cat.png" style="width: 250px; height: 400px">
 
 
 
       <!-- Use the correct HTML to make the image become a link to "default.html". -->
-
-      <img src="/src/assets/mochi.gif">
-
+	  <a href="default.html">
+       <img src="/src/assets/mochi.gif">
+	  </a>
 
       <!-- Make the image below float to the right of the paragraph.  -->
 
       <p>
-        <img src="/src/assets/mochi.gif" style=" ;">
+        <img src="/src/assets/mochi.gif" style="float: right;">
         This is a paragraph.
         This paragraph contains an image
       </p>
@@ -265,7 +270,7 @@
 
 
       <!-- Add the correct HTML attribute to display the "/src/assets/mochi.gif" image.-->
-      <img>
+      <img src="/src/assets/mochi.gif">
 
       <!--  Specify an alternate text for the image.
 
@@ -274,7 +279,7 @@
         Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.
     -->
 
-      <img src="/src/assets/mochi.gif">
+      <img src="/src/assets/mochi.gif" alt="Smiley">
 
 
     </section>
@@ -286,7 +291,10 @@
       <!--Add a table row with two table headers. The two table headers should have the value "Name" and "Age".-->
 
       <table>
-
+		<tr>
+			<th>Name</th>
+			<th>Age</th>
+		</tr>
         <tr>
           <td>Jill Smith</td>
           <td>50</td>
@@ -296,7 +304,7 @@
       <!-- Add a table caption that says "Names". -->
 
       <table>
-
+		<caption>Names</caption>
 
         <tr>
           <th>First Name</th>
@@ -314,7 +322,7 @@
 
       <!-- Use CSS styles to make the table 300 pixels wide. -->
 
-      <table    >
+      <table style="width:300px;">
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
@@ -340,6 +348,10 @@
           <td>Jill Smith</td>
           <td>50</td>
         </tr>
+		<tr>
+			<td>Eve Jackson</td>
+			<td>94</td>
+		</tr>
       </table>
 
 
@@ -348,6 +360,7 @@
       <table>
         <tr>
           <th
+		  colspan="2"
           >Name</th>
           <th>Age</th>
         </tr>
@@ -374,6 +387,7 @@
         </tr>
         <tr>
           <th
+		  rowspan="2"
           >Phone</th>
           <td>555-77854</td>
         </tr>
@@ -390,19 +404,20 @@
 
     <!--Add a list item with the text "Coffee" inside the <ul>. -->
     <ul>
-      Coffee
-
+	  <li>
+        Coffee
+	  </li>
     </ul>
 
     <!--Finish the HTML code to make an ordered list.. -->
-    <ul>
+    <ol>
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
-    </ul>
+    </ol>
 
     <!--Use CSS to display squares instead of bullets. -->
-    <ul style=" ;">
+    <ul style="list-style-type:square;">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
@@ -410,14 +425,14 @@
 
 
     <!--Use the correct HTML attribute to display letters (uppercase ABC) instead of numbers. -->
-    <ol>
+    <ol type="A">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
     </ol>
 
     <!--Use the correct HTML attribute to display uppercase roman numbers. -->
-    <ol>
+    <ol type="I">
       <li>Coffee</li>
       <li>Tea</li>
       <li>Milk</li>
@@ -428,11 +443,11 @@
     <dl>
       <dt>Coffee</dt>
 
-      - black hot drink
+      <dd>- black hot drink</dd>
 
       <dt>Milk</dt>
 
-      - white cold drink
+      <dd>- white cold drink</dd>
 
     </dl>
 
@@ -447,18 +462,18 @@
 
     <h2>HTML Iframe </h2>
 
-    <!--Create an iframe with a URL address that goes to https://www.w3schools.com.  -->
-      <iframe ="https://www.w3schools.com"></iframe>
+    <!--   -->
+      <iframe src="https://www.w3schools.com"></iframe>
 
       <!--Use an iframe attribute to make the iframe 500 pixels wide.  -->
-      <iframe src="https://www.w3schools.com"></iframe>
+      <iframe src="https://www.w3schools.com" width="500"></iframe>
 
 
     <!--Use CSS to display an iframe with no borders. -->
-      <iframe src="https://www.w3schools.com" style=""></iframe>
+      <iframe src="https://www.w3schools.com" style="border: none;"></iframe>
 
     <!--Create an iframe with a URL address that goes to "default.html". -->
-      Add iframe here
+     <iframe src="default.html">Add iframe here</iframe>
 
     </section>
 
@@ -468,26 +483,26 @@
 
     <!--In the form below, add an input field with the type "button" and the value "OK".  -->
       <form>
-        < >
+        <input type="button" value="OK">
       </form>
 
 
 
     <!-- In the form below, add two radio buttons, both with the name "fav_language". -->
       <form>
-        < value="html"> HTML
-        < value="css"> CSS
+        <input type="radio" name="fav_language" value="html"> HTML
+        <input type="radio" name="fav_language" value="css"> CSS
       </form>
 
 
       <!-- Add a submit button, and specify that the form should go to "/src/action_page.php". -->
-      <form  ="/src/action_page.php">
+      <form action="/src/action_page.php">
           Name: <input type="text" name="name">
-          < >
+          <input type="submit">
       </form>
 
     <!-- Specify that the form is submitted using the "POST" method.. -->
-      <form action="/src/action_page.php">
+      <form action="/src/action_page.php" method="post">
         Name: <input type="text" name="name">
         <input type="submit">
       </form>
@@ -495,7 +510,7 @@
 
       <!-- In the form below, add an empty drop down list with the name "cars".. -->
       <form action="/src/action_page.php">
-        < > </>
+        <select name="cars"></select>
       </form>
 
 
@@ -507,15 +522,15 @@
 
       <form action="/src/action_page.php">
         <select name="cars">
-          < >Volvo</>
-          < >Ford</>
+          <option value="Volvo">Volvo</option>
+          <option value="Ford">Ford</option>
         </select>
       </form>
 
       <!-- In the form below, add a text area with the name "note".-->
 
       <form action="/src/action_page.php">
-        < ></>
+        <textarea name="note"></textarea>
       </form>
 
 
@@ -528,26 +543,27 @@
 
     <!--In the form below, add an input field for text, with the name "username" .  -->
       <form action="/src/action_page.php">
-        < >
+        <input type="text" name="username">
       </form>
 
       <!--In the form below, add a submit button with the value "Submit Form".  -->
       <form action="/src/action_page.php">
         <input type="text" name="username">
-        <input>
+        <input type="submit" value="Submit Form">
       </form>
 
       <!--Add two radio buttons with the name "color".  -->
       <form action="/src/action_page.php">
         Favorite color:
-        Blue <input value="blue">
-        Red <input value="red">
+        Blue <input value="blue" type="radio" name="color">
+        Red <input value="red" type="radio" name="color">
         <input type="submit">
       </form>
 
 
       <!--In the form below, add a <button> element with the text "Click Me".  -->
       <form action="/src/action_page.php">
+		  <button>Click Me</button>
       </form>
 
 
@@ -558,7 +574,7 @@
       -->
 
       <form action="/src/action_page.php">
-        <input type="" ="1" ="5">
+        <input type="number" min="1" max="5">
       </form>
 
       <!--
@@ -566,7 +582,7 @@
       -->
 
       <form action="/src/action_page.php">
-        <input type="text">
+        <input type="text" placeholder="Your name here">
       </form>
 
       <!--
@@ -574,7 +590,7 @@
       -->
 
       <form action="/src/action_page.php">
-        <input type="text">
+        <input disabled type="text">
       </form>
 
       <!--
@@ -582,13 +598,13 @@
       -->
 
       <form action="/src/action_page.php">
-        <input type="text">
+        <input type="text" maxlength="40">
       </form>
 
       <!-- Set the input field to be read only (meaning that the value cannot be changed). -->
 
       <form action="/src/action_page.php">
-        <input type="text">
+        <input readonly type="text">
       </form>
 
 
