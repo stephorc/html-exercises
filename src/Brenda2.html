@@ -470,59 +470,61 @@
 
         <h2>HTML Forms </h2>
 
-        <!--In the form below, add an input field with the type "button" and the value "OK".  -->
+        <!--In the form below, add an input field with the type "button" and the value "OK ".  -->
         <form>
-            <>
+            <input type="button" value="OK ">
         </form>
 
 
 
-        <!-- In the form below, add two radio buttons, both with the name "fav_language". -->
+        <!-- In the form below, add two radio buttons, both with the name "fav_language ". -->
         <form>
-            < value="html"> HTML
-                < value="css"> CSS
+            <input type="radio" value="html " name="fav_language "> HTML
+            <input type="radio" name="fav_language " value="css "> CSS
         </form>
 
 
-        <!-- Add a submit button, and specify that the form should go to "/src/action_page.php". -->
-        <form="/src/action_page.php">
-            Name: <input type="text" name="name">
-            <>
-                </form>
+        <!-- Add a submit button, and specify that the form should go to "/src/action_page.php ". -->
+        <form action="/src/action_page.php ">
+            Name: <input type="text" name="name ">
+            <input type="submit">
+        </form>
 
-                <!-- Specify that the form is submitted using the "POST" method.. -->
-                <form action="/src/action_page.php">
-                    Name: <input type="text" name="name">
-                    <input type="submit">
-                </form>
-
-
-                <!-- In the form below, add an empty drop down list with the name "cars".. -->
-                <form action="/src/action_page.php">
-                    <>
-                        </>
-                </form>
+        <!-- Specify that the form is submitted using the "POST" method.. -->
+        <form action="/src/action_page.php " method="POST">
+            Name: <input type="text" name="name ">
+            <input type="submit">
+        </form>
 
 
-                <!-- In the form below, add two option elements to the drop down list.
+        <!-- In the form below, add an empty drop down list with the name "cars ".. -->
+        <form action="/src/action_page.php ">
+            <select name="cars ">
 
-    The first option must have the value "Volvo"
-    The second option must have the value "Ford".
-  -->
+      </select>
+        </form>
 
-                <form action="/src/action_page.php">
-                    <select name="cars">
-      < >Volvo</>
-    < >Ford</>
-  </select>
-                </form>
 
-                <!-- In the form below, add a text area with the name "note".-->
+        <!-- In the form below, add two option elements to the drop down list.
 
-                <form action="/src/action_page.php">
-                    <>
-                        </>
-                </form>
+        The first option must have the value "Volvo "
+        The second option must have the value "Ford ".
+      -->
+
+        <form action="/src/action_page.php ">
+            <select name="cars ">
+        <option value="Volvo ">Volvo</option>
+        <option value="Ford ">Ford</option>
+      </select>
+        </form>
+
+        <!-- In the form below, add a text area with the name "note ".-->
+
+        <form action="/src/action_page.php ">
+            <textarea name="note ">
+
+      </textarea>
+        </form>
 
 
 
