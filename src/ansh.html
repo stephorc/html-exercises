@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <title>Html exercise</title>
 </head>
 <body>
 <h1>HTML EXERCISE</h1>
@@ -18,7 +19,7 @@
 
   <!-- Set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-  <img src="/src/assets/notes.jpg" width="`250" height="400">
+  <img src="/src/assets/notes.jpg" width="250" height="400" alt="some">
 
   <!-- Make the element below into a link that goes to "https://www.w3schools.com".-->
 
@@ -231,7 +232,7 @@
 
   <!-- Use the correct HTML to make the image become a link to "default.html". -->
 
-  <a href="default.html"> <img src="/src/assets/mochi.gif"> </a>
+  <a href="default.html"> <img src="/src/assets/mochi.gif" alt="nah"> </a>
 
 
   <!-- Add a "tooltip" to the link. The "tooltip" should say "Home".-->
@@ -246,24 +247,24 @@
 
   <!--Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-  <img src="/src/assets/cat.png"  width="250"  height="400">
+  <img src="/src/assets/cat.png"  width="250"  height="400" alt="asda">
 
 
   <!-- Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-  <img src="/src/assets/cat.png" style="width: 250px; height:400px">
+  <img src="/src/assets/cat.png" style="width: 250px; height:400px" alt="okay">
 
 
 
   <!-- Use the correct HTML to make the image become a link to "default.html". -->
 
-  <a href="default.html"><img src="/src/assets/mochi.gif"></a>
+  <a href="default.html"><img src="/src/assets/mochi.gif" alt="one"></a>
 
 
   <!-- Make the image below float to the right of the paragraph.  -->
 
   <p>
-    <img src="/src/assets/mochi.gif" style="float:right ;">
+    <img src="/src/assets/mochi.gif" style="float:right;" alt="tow">
     This is a paragraph.
     This paragraph contains an image
   </p>
@@ -293,8 +294,11 @@
 
   <table>
       <thead>
-          <th>Name</th>
-          <th>Age</th>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+          </tr>
+          
       </thead>
 
     <tr>
@@ -367,12 +371,12 @@
     <tr>
       <td>Jill</td>
       <td>Smith</td>
-      <td>50</td>
+      
     </tr>
     <tr>
       <td>Eve</td>
       <td>Jackson</td>
-      <td>94</td>
+      
     </tr>
   </table>
 
@@ -489,15 +493,15 @@
 
   <!-- In the form below, add two radio buttons, both with the name "fav_language". -->
   <form>
-    <input type="radio" name="fav_language" value="html"> HTML</input>
-    <input type="radio" name="fav_language" value="css"> CSS</fnput>
+    <input type="radio" name="fav_language" value="html"> 
+    <input type="radio" name="fav_language" value="css"> 
   </form>
 
 
   <!-- Add a submit button, and specify that the form should go to "/src/action_page.php". -->
   <form  action="/src/action_page.php">
-  Name: <input type="text" name="name">
-  <input type="submit" value="Submit"/ >
+  Name: <input type="text" name="name"/>
+  <input type="submit" value="Submit" />
   </form>
 
   <!-- Specify that the form is submitted using the "POST" method.. -->
