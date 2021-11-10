@@ -468,44 +468,52 @@
   <iframe src="https://www.w3schools.com" style="border: none;"></iframe>
 
   <!--Create an iframe with a URL address that goes to "default.html". -->
-  Add iframe here
+  <iframe src="default.html"></iframe>
 
 </section>
 
 <section>
 
-  <h2>HTML Forms  </h2>
+  <h2>HTML Forms</h2>
 
   <!--In the form below, add an input field with the type "button" and the value "OK".  -->
   <form>
-    < >
+    <input type="button" value="OK">
   </form>
 
 
 
   <!-- In the form below, add two radio buttons, both with the name "fav_language". -->
   <form>
-    < value="html"> HTML
-    < value="css"> CSS
+  <form>
+    <input type="radio" name="fav_language" value="html">HTML<br>
+    <input type="radio" name="fav_language" value="css">CSS<br>
   </form>
 
 
   <!-- Add a submit button, and specify that the form should go to "/src/action_page.php". -->
-  <form  ="/src/action_page.php">
+
+  <form action="/src/action_page.php">
   Name: <input type="text" name="name">
-  < >
+  <input type="submit" value="Submit">
   </form>
 
   <!-- Specify that the form is submitted using the "POST" method.. -->
-  <form action="/src/action_page.php">
+  <form action="/src/action_page.php" method="post">
     Name: <input type="text" name="name">
     <input type="submit">
   </form>
 
 
   <!-- In the form below, add an empty drop down list with the name "cars".. -->
-  <form action="/src/action_page.php">
-    < > </>
+  <form>
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <input type="submit">
   </form>
 
 
@@ -515,17 +523,21 @@
     The second option must have the value "Ford".
   -->
 
-  <form action="/src/action_page.php">
+  <form>
     <select name="cars">
-      < >Volvo</>
-    < >Ford</>
-  </select>
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="fiat">Fiat</option>
+      <option value="audi">Audi</option>
+    </select>
+    <input type="submit">
   </form>
 
   <!-- In the form below, add a text area with the name "note".-->
-
-  <form action="/src/action_page.php">
-    < ></>
+  <form>
+    <form action="/src/action_page.php">
+      <textarea name="note" rows="5" cols="40"></textarea>
+      <input type="submit">
   </form>
 
 
