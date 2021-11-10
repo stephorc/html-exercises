@@ -297,53 +297,7 @@
   <section>
     <h2>HTML Tables </h2>
 
-    <!--Add a table row with two table headers. The two table headers should have the value "Name" and "Age".-->
-
-    <table>
-
-      <tr>
-        <td>Jill Smith</td>
-        <td>50</td>
-      </tr>
-    </table>
-
-    <!-- Add a table caption that says "Names". -->
-
-    <table>
-
-
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-    </table>
-
-
-
-    <!-- Use CSS styles to make the table 300 pixels wide. -->
-
-    <table>
-      <tr>
-        <th>First Name</th>
-        <th>Last Name</th>
-        <th>Points</th>
-      </tr>
-      <tr>
-        <td>Jill</td>
-        <td>Smith</td>
-        <td>50</td>
-      </tr>
-    </table>
-
-
-    <!-- Add a table row at the end of the table, with two table cells.
-       The two table cells should have the value "Eve Jackson" and "94". -->
+    <!-- DONE Add a table row with two table headers. The two table headers should have the value "Name" and "Age".-->
 
     <table>
       <tr>
@@ -356,12 +310,65 @@
       </tr>
     </table>
 
+    <!--DONE Add a table caption that says "Names". -->
 
-    <!-- Use the correct HTML attribute to make the first TH element span two columns. -->
+    <table>
+
+      <caption>Names</caption>
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+
+
+    <!-- DONE Use CSS styles to make the table 300 pixels wide. -->
+
+    <table style="width: 300px;">
+      <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Points</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+
+    <!-- DONE Add a table row at the end of the table, with two table cells.
+       The two table cells should have the value "Eve Jackson" and "94". -->
 
     <table>
       <tr>
         <th>Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+
+    <!--DONE Use the correct HTML attribute to make the first TH element span two columns. -->
+
+    <table>
+      <tr>
+        <th colspan="2">Name</th>
         <th>Age</th>
       </tr>
       <tr>
@@ -379,14 +386,14 @@
 
 
 
-    <!-- Use the correct HTML attribute to make the second TH element span two rows. -->
+    <!-- DONE Use the correct HTML attribute to make the second TH element span two rows. -->
     <table>
       <tr>
         <th>Name</th>
         <td>Jill Smith</td>
       </tr>
       <tr>
-        <th>Phone</th>
+        <th rowspan="2">Phone</th>
         <td>555-77854</td>
       </tr>
       <tr>
@@ -427,7 +434,7 @@
       <li>Milk</li>
     </ol>
 
-    <!--Use the correct HTML attribute to display uppercase roman numbers. -->
+    <!-- DONE Use the correct HTML attribute to display uppercase roman numbers. -->
     <ol type="I">
       <li>Coffee</li>
       <li>Tea</li>
@@ -497,7 +504,7 @@
       <input type="submit">
     </form>
 
-    <!-- ?DONE Specify that the form is submitted using the "POST" method.. -->
+    <!-- DONE Specify that the form is submitted using the "POST" method.. -->
     <form action="/src/action_page.php" method="post">
       Name: <input type="text" name="name">
       <input type="submit">
@@ -585,7 +592,7 @@
     </form>
 
     <!--
-    DONE ? Disable the input field below.
+    DONE Disable the input field below.
   -->
 
     <form action="/src/action_page.php">
@@ -593,14 +600,14 @@
     </form>
 
     <!--
-     DONE ? Set the max numbers of characters allowed in the input field to 40.
+     DONE Set the max numbers of characters allowed in the input field to 40.
   -->
 
     <form action="/src/action_page.php">
       <input type="text" maxlength="40">
     </form>
 
-    <!-- Set the input field to be read only (meaning that the value cannot be changed). -->
+    <!-- DONE Set the input field to be read only (meaning that the value cannot be changed). -->
 
     <form action="/src/action_page.php">
       <input type="text" readonly>
