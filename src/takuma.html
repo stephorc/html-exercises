@@ -478,26 +478,26 @@
 
   <!--In the form below, add an input field with the type "button" and the value "OK".  -->
   <form>
-    < >
+    <input type="button" value="OK">
   </form>
 
 
 
   <!-- In the form below, add two radio buttons, both with the name "fav_language". -->
   <form>
-    < value="html"> HTML
-    < value="css"> CSS
+    <input type="radio" value="fav_language"> HTML
+    <input type="radio" value="fav_language"> CSS
   </form>
 
 
   <!-- Add a submit button, and specify that the form should go to "/src/action_page.php". -->
-  <form  ="/src/action_page.php">
+  <form  aria-checked="/src/action_page.php">
   Name: <input type="text" name="name">
-  < >
+  <input type="submit" >
   </form>
 
   <!-- Specify that the form is submitted using the "POST" method.. -->
-  <form action="/src/action_page.php">
+  <form method="post" action="/src/action_page.php">
     Name: <input type="text" name="name">
     <input type="submit">
   </form>
@@ -505,7 +505,7 @@
 
   <!-- In the form below, add an empty drop down list with the name "cars".. -->
   <form action="/src/action_page.php">
-    < > </>
+    <select name="cars"></select>
   </form>
 
 
@@ -517,15 +517,15 @@
 
   <form action="/src/action_page.php">
     <select name="cars">
-      < >Volvo</>
-    < >Ford</>
+      <option>Volvo</option>
+    <option>Ford</option>
   </select>
   </form>
 
   <!-- In the form below, add a text area with the name "note".-->
 
   <form action="/src/action_page.php">
-    < ></>
+    <input type="text">
   </form>
 
 
