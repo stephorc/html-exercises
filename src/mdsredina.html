@@ -338,56 +338,60 @@
        The two table cells should have the value "Eve Jackson" and "94". -->
 
   <table>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill Smith</td>
+          <td>50</td>
+        </tr>
     <tr>
-      <th>Name</th>
-      <th>Age</th>
+      <td>Eve Jackson</td>
+      <td>94</td>
     </tr>
-    <tr>
-      <td>Jill Smith</td>
-      <td>50</td>
-    </tr>
-  </table>
+      </table>
 
 
   <!-- Use the correct HTML attribute to make the first TH element span two columns. -->
 
   <table>
-    <tr>
-      <th
-      >Name</th>
-      <th>Age</th>
-    </tr>
-    <tr>
-      <td>Jill</td>
-      <td>Smith</td>
-      <td>50</td>
-    </tr>
-    <tr>
-      <td>Eve</td>
-      <td>Jackson</td>
-      <td>94</td>
-    </tr>
-  </table>
-
+        <tr>
+          <th
+      colspan="2"
+          >Name</th>
+          <th>Age</th>
+        </tr>
+        <tr>
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>94</td>
+        </tr>
+      </table>
 
 
 
   <!-- Use the correct HTML attribute to make the second TH element span two rows. -->
   <table>
-    <tr>
-      <th>Name</th>
-      <td>Jill Smith</td>
-    </tr>
-    <tr>
-      <th
-      >Phone</th>
-      <td>555-77854</td>
-    </tr>
-    <tr>
-      <td>555-77854</td>
-    </tr>
-  </table>
-
+        <tr>
+          <th>Name</th>
+          <td>Jill Smith</td>
+        </tr>
+        <tr>
+          <th
+      rowspan="2"
+          >Phone</th>
+          <td>555-77854</td>
+        </tr>
+        <tr>
+          <td>555-77854</td>
+        </tr>
+      </table>
 </section>
 
 <section>
