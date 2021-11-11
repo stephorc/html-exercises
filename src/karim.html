@@ -213,34 +213,7 @@
 
 </section>
 
-<section>
-  <h2>HTML Links </h2>
 
-  <!--Use the correct HTML to make the text below into a link to "default.html".-->
-
-  <a href="default.html">Visit our HTML tutorial.</a>
-
-
-  <!-- Use CSS to remove the underline from the link.-->
-
-  <a href="/src/html_images.php" style="text-decoration: none">HTML Images</a>
-
-
-  <!-- Use the correct HTML attribute to make the link open in a new window. -->
-
-  <a href="/src/html_images.php" target="_blank"> HTML Images </a>
-
-
-  <!-- Use the correct HTML to make the image become a link to "default.html". -->
-<a href="default.html">
-   <img src="/src/assets/mochi.gif">
-</a>
-
-  <!-- Add a "tooltip" to the link. The "tooltip" should say "Home".-->
-
-  <a href="/src/default.html" title="Home">Back to Home</a>
-
-</section>
 
 
 <section>
@@ -253,19 +226,19 @@
 
   <!-- Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-  <img src="/src/assets/cat.png" style="width: 250px; height: 400px">
+  <img src="/src/assets/cat.png" style=" width: 250px; height: 400px">
 
 
 
   <!-- Use the correct HTML to make the image become a link to "default.html". -->
-<a href="default.html">
-   <img src="/src/assets/mochi.gif">
-</a>
+
+  <a href="/src/default.html"><img src="/src/assets/mochi.gif" ></a> 
+
 
   <!-- Make the image below float to the right of the paragraph.  -->
 
   <p>
-    <img src="/src/assets/mochi.gif" style="float: right;">
+    <img src="/src/assets/mochi.gif" style=" float: right;">
     This is a paragraph.
     This paragraph contains an image
   </p>
@@ -289,57 +262,15 @@
 
 
 <section>
-  <h2>HTML Images  </h2>
-
-  <!--Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.-->
-
-  <img src="/src/assets/cat.png"  ="250"  ="400">
-
-
-  <!-- Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.-->
-
-  <img src="/src/assets/cat.png" style=" ;">
-
-
-
-  <!-- Use the correct HTML to make the image become a link to "default.html". -->
-
-  <img src="/src/assets/mochi.gif">
-
-
-  <!-- Make the image below float to the right of the paragraph.  -->
-
-  <p>
-    <img src="/src/assets/mochi.gif" style=" ;">
-    This is a paragraph.
-    This paragraph contains an image
-  </p>
-
-
-
-  <!-- Add the correct HTML attribute to display the "/src/assets/mochi.gif" image.-->
-  <img>
-
-  <!--  Specify an alternate text for the image.
-
-    The alternate text should say "Smiley".
-
-    Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader.
--->
-
-  <img src="/src/assets/mochi.gif">
-
-
-</section>
-
-
-<section>
   <h2>HTML Tables   </h2>
 
   <!--Add a table row with two table headers. The two table headers should have the value "Name" and "Age".-->
 
   <table>
-
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
     <tr>
       <td>Jill Smith</td>
       <td>50</td>
@@ -350,7 +281,7 @@
 
   <table>
 
-
+    <caption>Names</caption>
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
@@ -367,7 +298,7 @@
 
   <!-- Use CSS styles to make the table 300 pixels wide. -->
 
-  <table    >
+  <table  style="width: 300px">
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
@@ -393,6 +324,10 @@
       <td>Jill Smith</td>
       <td>50</td>
     </tr>
+    <tr>
+        <td>Eve Jackson</td>
+        <td>94</td>
+      </tr>
   </table>
 
 
@@ -400,8 +335,7 @@
 
   <table>
     <tr>
-      <th
-      >Name</th>
+      <th rowspan="2">Name</th>
       <th>Age</th>
     </tr>
     <tr>
@@ -426,8 +360,7 @@
       <td>Jill Smith</td>
     </tr>
     <tr>
-      <th
-      >Phone</th>
+      <th rowspan="2">Phone</th>
       <td>555-77854</td>
     </tr>
     <tr>
@@ -455,7 +388,7 @@
   </ul>
 
   <!--Use CSS to display squares instead of bullets. -->
-  <ul style=" ;">
+  <ul style="list-style-type: square;">
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
@@ -463,7 +396,7 @@
 
 
   <!--Use the correct HTML attribute to display letters (uppercase ABC) instead of numbers. -->
-  <ol>
+  <ol type = "A">
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
