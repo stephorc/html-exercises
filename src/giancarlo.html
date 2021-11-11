@@ -390,10 +390,11 @@
   <h2>HTML Lists    </h2>
 
   <!--Add a list item with the text "Coffee" inside the <ul>. -->
-  <ul>
-    Coffee
-
-  </ul>
+ <ul>
+	  <li>
+        Coffee
+	  </li>
+    </ul>
 
   <!--Finish the HTML code to make an ordered list.. -->
   <ol>
@@ -530,26 +531,27 @@
 
   <!--In the form below, add an input field for text, with the name "username" .  -->
   <form action="/src/action_page.php">
-    < >
+    <input type="text" name="username">
   </form>
 
   <!--In the form below, add a submit button with the value "Submit Form".  -->
   <form action="/src/action_page.php">
     <input type="text" name="username">
-    <input>
+    <input type="submit" value="Submit Form">
   </form>
 
   <!--Add two radio buttons with the name "color".  -->
   <form action="/src/action_page.php">
     Favorite color:
-    Blue <input value="blue">
-    Red <input value="red">
+    Blue <input value="blue" type="radio" name="color">
+    Red <input value="red" type="radio" name="color">
     <input type="submit">
   </form>
 
 
   <!--In the form below, add a <button> element with the text "Click Me".  -->
   <form action="/src/action_page.php">
+  <button>Click Me</button>
   </form>
 
 
@@ -560,7 +562,7 @@
   -->
 
   <form action="/src/action_page.php">
-    <input type="" ="1" ="5">
+    <input type="number" min="1" max="5">
   </form>
 
   <!--
@@ -568,7 +570,7 @@
   -->
 
   <form action="/src/action_page.php">
-    <input type="text">
+    <input type="text" placeholder="Your name here">
   </form>
 
   <!--
@@ -576,7 +578,7 @@
   -->
 
   <form action="/src/action_page.php">
-    <input type="text">
+    <input disabled type="text">
   </form>
 
   <!--
@@ -584,13 +586,13 @@
   -->
 
   <form action="/src/action_page.php">
-    <input type="text">
+    <input type="text" maxlength="40">
   </form>
 
   <!-- Set the input field to be read only (meaning that the value cannot be changed). -->
 
   <form action="/src/action_page.php">
-    <input type="text">
+    <input readonly type="text">
   </form>
 
 
