@@ -335,7 +335,8 @@
 
   <table>
     <tr>
-      <th rowspan="2">Name</th>
+      <th
+      >Name</th>
       <th>Age</th>
     </tr>
     <tr>
@@ -360,7 +361,8 @@
       <td>Jill Smith</td>
     </tr>
     <tr>
-      <th rowspan="2">Phone</th>
+      <th rowspan="3"
+      >Phone</th>
       <td>555-77854</td>
     </tr>
     <tr>
@@ -376,16 +378,16 @@
 
   <!--Add a list item with the text "Coffee" inside the <ul>. -->
   <ul>
-    Coffee
+    <li>Coffee</li>
 
   </ul>
 
   <!--Finish the HTML code to make an ordered list.. -->
-  <ul>
+  <ol>
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
-  </ul>
+  </ol>
 
   <!--Use CSS to display squares instead of bullets. -->
   <ul style="list-style-type: square;">
@@ -396,14 +398,14 @@
 
 
   <!--Use the correct HTML attribute to display letters (uppercase ABC) instead of numbers. -->
-  <ol type = "A">
+  <ol style="list-style-type: upper-latin;">
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
   </ol>
 
   <!--Use the correct HTML attribute to display uppercase roman numbers. -->
-  <ol>
+  <ol style="list-style-type: upper-roman;">
     <li>Coffee</li>
     <li>Tea</li>
     <li>Milk</li>
@@ -413,13 +415,9 @@
   <!--Use the correct HTML elements to make a description of each term in the description list.. -->
   <dl>
     <dt>Coffee</dt>
-
-    - black hot drink
-
+    <dd>- black hot drink</dd>
     <dt>Milk</dt>
-
-    - white cold drink
-
+    <dd>- white cold drink</dd>
   </dl>
 
 
@@ -434,17 +432,17 @@
   <h2>HTML Iframe </h2>
 
   <!--Create an iframe with a URL address that goes to https://www.w3schools.com.  -->
-  <iframe ="https://www.w3schools.com"></iframe>
+  <iframe src="https://www.w3schools.com"></iframe>
 
   <!--Use an iframe attribute to make the iframe 500 pixels wide.  -->
-  <iframe src="https://www.w3schools.com"></iframe>
+  <iframe src="https://www.w3schools.com" width="500"></iframe>
 
 
   <!--Use CSS to display an iframe with no borders. -->
-  <iframe src="https://www.w3schools.com" style=""></iframe>
+  <iframe src="https://www.w3schools.com" style="border: none;"></iframe>
 
   <!--Create an iframe with a URL address that goes to "default.html". -->
-  Add iframe here
+  <iframe  src="default.html"></iframe>
 
 </section>
 
