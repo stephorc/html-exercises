@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>html-exercises</title>
   </head>
   <body>
     <h1>HTML EXERCISE</h1>
@@ -15,7 +16,7 @@
 
       <!-- Set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/notes.jpg" width="250" height="400" />
+      <img src="/src/assets/notes.jpg" width="250" height="400" alt="notes" />
 
       <!-- Make the element below into a link that goes to "https://www.w3schools.com".-->
 
@@ -110,7 +111,7 @@
 
       <p>
         WWF's mission is to stop the
-        <string>degradation</string>
+        <strong>degradation</strong>
         of our planet's natural environment.
       </p>
 
@@ -212,14 +213,14 @@
 
       <!--Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/cat.png" width="250px" height="400px" />
+      <img src="/src/assets/cat.png" width="250" height="400" alt="cat" />
 
       <!-- Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
       <img
         src="/src/assets/cat.png"
-        style="width: 250px"
-        style="height: 400px"
+        style="width: 250px; height: 400px"
+        alt="cat"
       />
 
       <!-- Use the correct HTML to make the image become a link to "default.html". -->
@@ -229,12 +230,12 @@
       <!-- Make the image below float to the right of the paragraph.  -->
 
       <p>
-        <img src="/src/assets/mochi.gif" style="float: right" />
+        <img src="/src/assets/mochi.gif" style="float: right" alt="mochi" />
         This is a paragraph. This paragraph contains an image
       </p>
 
       <!-- Add the correct HTML attribute to display the "/src/assets/mochi.gif" image.-->
-      <img src="/src/assets/mochi.gif" />
+      <img src="/src/assets/mochi.gif" alt="mochi" />
 
       <!--  Specify an alternate text for the image.
 
@@ -253,10 +254,10 @@
 
       <table>
         <tr>
-          <thead>
-            <th>Name</th>
-            <th>Ages</th>
-          </thead>
+          <th>Name</th>
+          <th>Ages</th>
+        </tr>
+        <tr>
           <td>Jill Smith</td>
           <td>50</td>
         </tr>
@@ -282,7 +283,7 @@
 
       <!-- Use CSS styles to make the table 300 pixels wide. -->
 
-      <table style="table-layout: fixed" style="width: 300px">
+      <table style="table-layout: fixed; width: 300px">
         <tr>
           <th>First Name</th>
           <th>Last Name</th>
@@ -403,7 +404,7 @@
       <iframe src="https://www.w3schools.com"></iframe>
 
       <!--Use an iframe attribute to make the iframe 500 pixels wide.  -->
-      <iframe src="https://www.w3schools.com" width="500px"></iframe>
+      <iframe src="https://www.w3schools.com" width="500"></iframe>
 
       <!--Use CSS to display an iframe with no borders. -->
       <iframe
@@ -431,7 +432,7 @@
       </form>
 
       <!-- Add a submit button, and specify that the form should go to "/src/action_page.php". -->
-      <form aria-checked="/src/action_page.php">
+      <form action="/src/action_page.php">
         Name: <input type="text" name="name" />
         <input type="submit" />
       </form>
