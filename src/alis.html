@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>html exercise</title>
   </head>
   <body>
     <h1>HTML EXERCISE</h1>
@@ -11,11 +12,10 @@
 
       <!-- Add a "tooltip" to the paragraph below with the text "About W3Schools".-->
 
-      <p ="About W3Schools">W3Schools is a web developer's site.</p>
+      <p title="About W3Schools">W3Schools is a web developer's site.</p>
 
       <!-- Set the size of the image to 250 pixels wide and 400 pixels tall.-->
-
-      <img src="/src/assets/notes.jpg" width="400px" height="250px" />
+      <img src="/src/assets/notes.jpg" width="250" height="400" alt="img" />
 
       <!-- Make the element below into a link that goes to "https://www.w3schools.com".-->
 
@@ -83,7 +83,7 @@
 
       <!-- Use the correct HTML tag to add a heading with the text "London".-->
 
-      <h1>London</h1>
+      <h3>London</h3>
 
       <p>
         London is the capital city of England. It is the most populous city in
@@ -99,11 +99,11 @@
 
       <!-- Use CSS to set the font of the paragraph to "courier". -->
 
-      <p style="color: courier">This is a paragraph.</p>
+      <p style="font-family: courier">This is a paragraph.</p>
 
       <!-- Use CSS to center align the paragraph.. -->
 
-      <p style="color: center">This is a paragraph.</p>
+      <p style="text-align: center">This is a paragraph.</p>
 
       <!-- Use CSS to set the text size to 50 pixels.  -->
 
@@ -151,7 +151,7 @@
 
       <p>
         My favorite color is
-        <strike>blue</strike>
+        <span style="text-decoration: line-through">blue</span>
         red.
       </p>
     </section>
@@ -197,7 +197,7 @@
 
       <!--Use the correct HTML to make the text below into a link to "default.html".-->
 
-      >Visit our HTML tutorial.
+      <a href="default.html">Visit our HTML tutorial.</a>
 
       <!-- Use CSS to remove the underline from the link.-->
 
@@ -207,41 +207,50 @@
 
       <!-- Use the correct HTML attribute to make the link open in a new window. -->
 
-      <a href="/src/html_images.php"> HTML Images </a>
+      <a href="/src/html_images.php" target="_blank"> HTML Images </a>
 
       <!-- Use the correct HTML to make the image become a link to "default.html". -->
 
-      <img src="/src/assets/mochi.gif" />
+      <a href="default.html"> <img src="/src/assets/mochi.gif" alt="nah" /> </a>
 
       <!-- Add a "tooltip" to the link. The "tooltip" should say "Home".-->
 
-      <a href="/src/default.html">Back to Home</a>
+      <a title="home" href="/src/default.html">Back to Home</a>
     </section>
-
     <section>
       <h2>HTML Images</h2>
 
       <!--Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/cat.png" height="250px" width="400px" />
+      <img
+        alt="cat"
+        src="/src/assets/cat.png"
+        style="width: 250px; height: 400px"
+      />
 
       <!-- Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.-->
 
-      <img src="/src/assets/cat.png" style="height: 250px; width: 400px" />
+      <img
+        alt="cat"
+        src="/src/assets/cat.png"
+        style="width: 250px; height: 400px"
+      />
 
       <!-- Use the correct HTML to make the image become a link to "default.html". -->
 
-      <img src="/src/assets/mochi.gif" />
+      <a href="default.html">
+        <img alt="mochi gif" src="/src/assets/mochi.gif" />
+      </a>
 
       <!-- Make the image below float to the right of the paragraph.  -->
 
       <p>
-        <img src="/src/assets/mochi.gif" style="float: right" />
+        <img alt="mochi gif" src="/src/assets/mochi.gif" style="float: right" />
         This is a paragraph. This paragraph contains an image
       </p>
 
       <!-- Add the correct HTML attribute to display the "/src/assets/mochi.gif" image.-->
-      <img />
+      <img alt="mochigif" src="/src/assets/mochi.gif" />
 
       <!--  Specify an alternate text for the image.
 
@@ -337,10 +346,10 @@
       <table>
         <tr>
           <th>Name</th>
-          <td rowspan="2">Jill Smith</td>
+          <td>Jill Smith</td>
         </tr>
         <tr>
-          <th>Phone</th>
+          <th rowspan="2">Phone</th>
           <td>555-77854</td>
         </tr>
         <tr>
@@ -404,14 +413,14 @@
       <iframe src="https://www.w3schools.com"></iframe>
 
       <!--Use an iframe attribute to make the iframe 500 pixels wide.  -->
-      <iframe width="500px" src="https://www.w3schools.com"></iframe>
+      <iframe src="https://www.w3schools.com" width="500"></iframe>
 
       <!--Use CSS to display an iframe with no borders. -->
-      <iframe src="https://www.w3schools.com" style="border-width: 0"></iframe>
+      <iframe src="https://www.w3schools.com" style="border: none"></iframe>
 
       <!--Create an iframe with a URL address that goes to "default.html". -->
       Add iframe here
-      <iframe height="200px" width="100%" src="default.html"></iframe>
+      <iframe src="default.html"></iframe>
     </section>
 
     <section>
